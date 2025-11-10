@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;AAKA","sources":["src/style.css"],"sourcesContent":["body {\r\n    font-family: Arial, sans-serif;\r\n    background-color: #f0f0f0;\r\n}\r\n\r\nh1 {\r\n    color: #007acc;\r\n}\r\n"],"names":[],"version":3,"file":"PAC1.2cdaf7bc.css.map","sourceRoot":"/__parcel_source_root/"}
