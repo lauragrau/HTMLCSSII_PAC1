@@ -108,7 +108,7 @@ a {
     align-items: center; 
 }
 
-
+/**Imatges**/
 
 figure img {
     /* background-color: var(--white-color); */
@@ -116,6 +116,23 @@ figure img {
     width: 200px;       /* Ajusta el ancho */
     height: auto;       /* Mantiene la proporción original */
 }
+
+.blackboard figure img {
+    padding: 10px;
+    width: 200px;       /* Ajusta el ancho */
+    height: auto;       /* Mantiene la proporción original */
+}
+
+
+.right figure img {
+    width: 100%;        /* La imagen ocupa todo el ancho disponible */
+    height: auto;       /* Mantiene las proporciones */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    padding: 10px;      /* Espacio alrededor de la imagen */
+    background-color: var(--white-color); /* Fondo blanco, si quieres destacar la imagen */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra sutil */
+}
+
 
 
 div.card > h3:hover {
