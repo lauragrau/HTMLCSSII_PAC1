@@ -62,10 +62,10 @@ h2 {
     font-size: 1.3rem;
 }
 
-section.blog-list li  {
+section.list li  {
     background-color: var(--white-color); 
+    border-radius: 10px; 
 }
-
 
 section.post-list li  {
     background-color: var(--white-color); 
@@ -152,6 +152,26 @@ h3 a:hover {
 .clo1 ul li:hover{
     color: var(--green-color);
     text-decoration: none; 
+
+}
+
+  
+.card img {
+    text-align: center;
+}
+  
+.card h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--black-color);
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--black-color);
+    text-align: justify; 
 
 }
 
@@ -522,13 +542,13 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 
 
-#header ul,#header li,.blog-list ol,.post-list ol, .blog-list li, .post-list li,footer ul,footer li,.advantages ul,.advantages li{
+#header ul,#header li,.list ol,.post-list ol, .list li, .post-list li,footer ul,footer li,.advantages ul,.advantages li{
     margin:0;padding:0;
     list-style-type: none;
 }
 
 
-.blog-list ol, .post-list ol{
+.list ol, .post-list ol{
     display:grid;
     grid-template-rows:repeat(8,1fr);
     align-items: stretch;
@@ -544,7 +564,8 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     color: var(--black-color); 
     display: inline-block; 
     background-color: var(--white-color); 
-    margin-left: 0;
+    margin-left: 10;
+    margin-bottom: 10;
 }
 
 .button:hover {
@@ -588,7 +609,7 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     .contact-options .container,#header .features{
         flex-flow:row;
     }
-    .blog-list ol, .top-categories ul{
+    .list ol, .top-categories ul{
         grid-template-columns:1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
@@ -606,7 +627,7 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 }
 @media screen and (min-width: 992px){
-    .blog-list ol{
+    .list ol{
         grid-template-columns:1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
