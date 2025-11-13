@@ -4,6 +4,7 @@
     --black-color: rgb(0, 0, 0);
     --white-color: rgb(255, 255, 255);
     --green-color: rgb(64, 195, 130);
+    --darkgreen-color: rgb(0, 119, 6);
     --beige-color: rgb(242, 242, 230);
     --mod-beige-color: rgba(242, 242, 230, 0.7);
  }
@@ -516,6 +517,7 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     
 }
 
+/*active*/
 
 .pagination a.active {
     background-color: var(--green-color); 
@@ -541,6 +543,11 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     border: none; 
     background-color: transparent; 
     cursor: default; 
+}
+
+
+.col1 a.active {
+    color: var(--darkgreen-color); 
 }
 
 
