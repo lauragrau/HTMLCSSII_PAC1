@@ -192,13 +192,13 @@ h3 a:hover {
     height: 100%; 
 }
 
-/* Menú de navegació */
-nav {
+/* Menú de navegació principal*/
+.nav-principal nav{
     width: 900px; 
     padding-left: 20px; 
 }
 
-nav ul {
+.nav-principal ul {
     list-style: none; 
     margin: 0;
     padding: 0;
@@ -206,12 +206,12 @@ nav ul {
     gap: 20px; 
 }
 
-nav ul li {
+.nav-principal ul li {
     margin-bottom: 5px; 
     padding: 8px 12px;
 }
 
-nav ul li a {
+.nav-principal ul li a {
     text-decoration: none; 
     color: var(--black-color); 
     display: block; 
@@ -219,16 +219,72 @@ nav ul li a {
 
 }
 
-nav ul li a:hover { 
+.nav-principal ul li a:hover { 
     color: var(--green-color); 
 }
 
-.nav a {
+.nav-principal a {
     text-decoration: none; 
     color: var(--black-color); 
     font-weight: bold;
     font-size: 2rem;
 }
+
+
+/* Menú de navegació secundari*/
+
+.nav-secundari ul{
+    list-style: none;
+}
+
+.nav-secundari ul li {
+    margin-bottom: 5px; 
+    padding: 8px 12px;
+}
+
+.nav-secundari ul li a {
+    text-decoration: none; 
+    color: var(--black-color); 
+    display: block; 
+    font-weight: 700;
+
+}
+
+.nav-secundari ul li a:hover { 
+    color: var(--green-color); 
+}
+
+.nav-secundari a {
+    text-decoration: none; 
+    color: var(--black-color); 
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/*ACT*/
+
+section.blog-list li  {
+    background-color: var(--white-color); 
+}
+
+#header ul,#header li,.blog-list ol,.post-list ol, .blog-list li, .post-list li,footer ul,footer li,.advantages ul,.advantages li{
+    margin:0;padding:0;
+    list-style-type: none;
+}
+
+
+.blog-list ol, .post-list ol{
+    display:grid;
+    grid-template-rows:repeat(8,1fr);
+    align-items: stretch;
+    gap:3rem;
+    margin-bottom:6rem;
+}
+
+
+
+
 
 
 
@@ -267,7 +323,9 @@ footer aside {
     color: var(--black-color); 
     font-weight: 1000;   
     text-align: center; 
-  }
+}
+
+
 
 
 /*Footer*/
@@ -714,3 +772,43 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
         column-gap: 5%;
       }
   }
+
+
+
+
+
+
+
+/*ACT*/
+
+
+section.blog-list li  {
+    background-color: var(--white-color); 
+}
+
+
+
+
+#header ul,#header li,.blog-list ol,.post-list ol, .blog-list li, .post-list li,footer ul,footer li,.advantages ul,.advantages li{
+    margin:0;padding:0;
+    list-style-type: none;
+}
+
+
+.blog-list ol, .post-list ol{
+    display:grid;
+    grid-template-rows:repeat(8,1fr);
+    align-items: stretch;
+    gap:3rem;
+    margin-bottom:6rem;
+}
+
+
+
+
+@media screen and (min-width: 992px){
+    .blog-list ol{
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
