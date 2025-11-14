@@ -10,7 +10,7 @@
  }
 
 
- html{
+html{
     font-size:10px;
     font-family: 'Alegreya', serif;
     color: var(--black-color);
@@ -156,7 +156,11 @@ h3 a:hover {
 
 }
 
-  
+
+.card {
+    flex-grow: 1;
+}
+
 .card img {
     text-align: center;
 }
@@ -641,14 +645,32 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 .image-container {
     position: relative; 
-    display: inline-block; 
+    text-align: center;
 
 }
 
 .image-container img {
     width: 100%; 
     height: auto; 
-    display: block; 
+}
+
+.image-container-onmenjar {
+    position: relative; 
+    text-align: center;
+
+}
+
+.image-container-onmenjar img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-container-det img {
+    width: 60%;
+    height: auto;
+    display: block;     /* necesario para centrar con margin */
+    margin: 0 auto;     /* centra horizontalmente */
 }
 
 .image-container-post img {
