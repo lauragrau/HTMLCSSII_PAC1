@@ -10,6 +10,7 @@
   "author": "Laura Grau",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.16.1"
+    "parcel": "^2.16.1",
+    "posthtml-include": "^2.0.1"
   }
 }

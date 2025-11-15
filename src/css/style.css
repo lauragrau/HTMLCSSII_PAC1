@@ -365,7 +365,7 @@ section.blog-list li {
 
 .blog-list ol {
     display: grid;
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
     align-items: stretch;
     gap: 3rem;
     margin-bottom: 6rem;
