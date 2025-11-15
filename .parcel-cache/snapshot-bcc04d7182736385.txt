@@ -40,7 +40,7 @@
 99C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\domutils\lib\stringify.js121436361000000000 0
 91C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\fclone\bower.json131166076590000000 0
 96C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\commander\lib\error.js121436361000000000 0
-64C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\src134076497028116803 1
+64C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\src134076505305653699 1
 121C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\lmdb\dependencies\lz4\lib\dll\example\README.md121436361000000000 0
 110C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\caniuse-lite\data\features\run-in.js121436361000000000 0
 98C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\postcss-value-parser\lib134072810017508210 1
@@ -111,7 +111,7 @@
 107C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\@swc\helpers\_\_apply_decs_2203_r134072810060124684 1
 123C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\@swc\helpers\esm\_define_enumerable_properties.js121436361000000000 0
 119C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\node-gyp-build-optional-packages\node_modules134072810000905862 1
-75C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\src\index.html134076502749178998 0
+75C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\src\index.html134076505426329428 0
 93C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\type-fest\base.d.ts121436361000000000 0
 98C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\@parcel\watcher\src\unix134072810038339771 1
 90C:\Users\34675\Desktop\MASTER-UOC\HTMLCSS II\PROJParcel\PAC1\node_modules\dotenv\README.md121436361000000000 0
