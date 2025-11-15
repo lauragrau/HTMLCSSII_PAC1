@@ -63,7 +63,7 @@ h2 {
     font-size: 1.3rem;
 }
 
-section.list li  {
+section.news-list li  {
     background-color: var(--white-color); 
     border-radius: 10px; 
 }
@@ -134,6 +134,21 @@ figure img {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra sutil */
 }
 
+.right-news {
+    text-align: right;   /* O center si lo quieres centrado */
+}
+
+#next-btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-color: var(--black-color);
+    border-radius: 8px;
+    padding: 6px 16px;   /* Botón más pequeño */
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block; 
+    margin-left: auto;   /* Evita que se estire */
+}
 
 
 div.card > h3:hover {
@@ -162,8 +177,13 @@ h3 a:hover {
 }
 
 .card img {
-    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 80%;       
+    max-width: 400px; 
+    height: auto;     
 }
+
   
 .card h3 {
     font-size: 1.5rem;
@@ -179,7 +199,6 @@ h3 a:hover {
     text-align: justify; 
 
 }
-
 
 /* Contenidor del logo */
 .logo {
@@ -600,19 +619,13 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 
 
-#header ul,#header li,.list ol,.post-list ol, .list li, .post-list li,footer ul,footer li,.advantages ul,.advantages li{
+#header ul,#header li,.news-list ol, .news-list li,footer ul,footer li,.advantages ul,.advantages li{
     margin:0;padding:0;
     list-style-type: none;
 }
 
 
-.list ol, .post-list ol{
-    display:grid;
-    grid-template-rows:repeat(8,1fr);
-    align-items: stretch;
-    gap:3rem;
-    margin-bottom:6rem;
-}
+
 
 
 .button {
@@ -631,6 +644,18 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     text-decoration: none; 
 }
 
+.news-list li .button {
+    display: inline-block;      /* Para poder centrar con text-align */
+    margin: 1rem auto 0 auto;   /* margen superior y centrado horizontal */
+    text-align: center;
+    padding: 0.5rem 1rem;       /* tamaño del botón */
+    cursor: pointer;
+    margin: 1rem auto 2rem auto;
+}
+
+.news-list li {
+    text-align: center;         /* Esto centra elementos inline como el a.button */
+}
 
 .image-container {
     position: relative; 
@@ -673,7 +698,7 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     .contact-options .container,#header .features{
         flex-flow:row;
     }
-    .list ol, .top-categories ul{
+    .news-list ol, .top-categories ul{
         grid-template-columns:1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
@@ -691,7 +716,7 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 }
 @media screen and (min-width: 992px){
-    .list ol{
+    .news-list ol{
         grid-template-columns:1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
