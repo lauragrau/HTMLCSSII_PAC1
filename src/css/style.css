@@ -425,53 +425,6 @@ footer aside {
 
 
 
-.advantages .container{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap:3rem;
-}
-.advantages .left{
-    display:flex;
-    flex-flow:column wrap;
-    align-content:space-between;
-}
-
-.advantages h2{
-    font-weight: normal;
-    font-size:6rem;
-    color:var(--black-color);
-    line-height:1em;
-    margin-bottom:5rem;
-}
-
-.Field li{
-    display:flex;
-    flex-flow: column;
-    margin: 0;
-}
-
-
-
-.outFieldset {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.outFieldset li {
-    display:flex;
-    margin: 0;
-}
-
-.outFieldset p {
-    font-size: 1.2rem;
-    color: var(--black-color);
-    margin-bottom: 15px;
-}
-
-
 
 p{
     font-size: 1.5rem;
@@ -483,12 +436,6 @@ p.lead {
 
 figcaption{
     font-size: 1.2rem;
-}
-
-
-label abbr {
-    color: #e74c3c;
-    font-size: 16px;
 }
 
 figcaption a, .monthly_topic a, label a{
@@ -561,13 +508,6 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 
 
-@media (max-width: 600px) {
-    .outFieldset {
-        padding: 15px;
-    }
-
-}
-
 @media screen and (min-width: 600px) {
     .form {
       display: grid;
@@ -581,69 +521,43 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 @media (max-width: 768px) {
 
-    .header-container {
-        flex-direction: column; 
-        text-align: center;
+    html, body {
+        height: auto;
+        overflow-x: hidden;  /* evita scroll horizontal que estira vertical */
     }
 
-    .nav ul {
-        gap: 10px; 
-    }
-
-    .footer-container {
-        flex-direction: column; 
-        text-align: center;
-    }
-
-    footer .right{
-        order:0;
+    main, section {
+        padding: 0 1rem;
+        margin: 0;
     }
 
     .blackboard {
         height: auto;
         min-height: 50vh;
     }
-    
-    main, section {
-        padding: 10px;
-        margin-bottom: 0;
+
+    .form {
+        display: block;
     }
-    
+
     .news-list ol, .post-list ol {
         display: block;
         grid-template-columns: none;
         grid-template-rows: auto;
     }
-    
-    .form {
-        display: block;
-    }
-    
+
     .card {
         flex-grow: 0;
         margin-bottom: 1rem;
     }
-    
-    .news-list li .button {
-        margin-bottom: 1rem;
+
+    figure img {
+        max-width: 100%;
+        height: auto;
     }
 
-    
-}
 
-@media screen and (min-width: 992px){
-    .advantages .left{
-        width:50%;
-        max-width:560px;
-    }
-    .advantages .right{
-        width:40%;
-    }
-    .advantages .congrats{
-        bottom:auto;
-        top:5rem;
-        left:-5rem;
-    }
+   
 }
 
 
@@ -731,10 +645,6 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
         grid-template-columns:1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    .post-list ol{
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
 
 }
 @media screen and (min-width: 768px){
@@ -744,29 +654,33 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     }
 
 }
+
+
+@media (max-width: 768px) {
+    .blog-list ol {
+        display: block;        /* ya lo haces */
+        margin-bottom: 1rem;   /* reduce el espacio */
+        gap: 0;                /* elimina gaps de grid */
+    }
+
+    .blog-list li {
+        margin-bottom: 1rem;   /* ajusta espacio entre tarjetas */
+    }
+
+    main, section {
+        padding-bottom: 1rem;  /* quita padding grande al final */
+    }
+}
+
+
+
+
 @media screen and (min-width: 992px){
     .news-list ol{
         grid-template-columns:1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
-    .post-list ol{
-        grid-template-columns:1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .advantages .left{
-        width:50%;
-        max-width:560px;
-    }
-    .advantages .right{
-        width:40%;
-    }
-    .advantages .congrats{
-        bottom:auto;
-        top:5rem;
-        left:-5rem;
-    }
     .article #main-content .container,.offices-contact{
         flex-flow: row;
     }
@@ -850,9 +764,9 @@ section.blog-list li  {
 }
 
 
-.blog-list ol, .post-list ol{
+.blog-list ol{
     display:grid;
-    grid-template-rows:repeat(8,1fr);
+    grid-template-rows:repeat(4,1fr);
     align-items: stretch;
     gap:3rem;
     margin-bottom:6rem;
