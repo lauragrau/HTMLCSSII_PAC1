@@ -68,10 +68,6 @@ section.news-list li  {
     border-radius: 10px; 
 }
 
-section.post-list li  {
-    background-color: var(--white-color); 
-}
-
 main {
     padding: 20px;
     
@@ -135,7 +131,11 @@ figure img {
 }
 
 .right-news {
-    text-align: right;   /* O center si lo quieres centrado */
+    text-align: right; 
+}
+
+.left-news {
+    text-align: left; 
 }
 
 #next-btn {
@@ -143,11 +143,8 @@ figure img {
     color: var(--black-color);
     border-color: var(--black-color);
     border-radius: 8px;
-    padding: 6px 16px;   /* Botón más pequeño */
+    padding: 6px 16px;  
     font-size: 1rem;
-    cursor: pointer;
-    display: inline-block; 
-    margin-left: auto;   /* Evita que se estire */
 }
 
 
@@ -583,6 +580,11 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 
 @media (max-width: 768px) {
+    section {
+        min-height: auto;
+        height: auto;
+    }
+    
     .header-container {
         flex-direction: column; 
         text-align: center;
@@ -797,11 +799,6 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
       column-gap: 5%;
     }
 
-    section.post {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 5%;
-      }
   }
 
 

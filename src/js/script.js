@@ -6,20 +6,12 @@ newsList.forEach((li, index) => {
     li.style.display = index === 0 ? "block" : "none";
 });
 
-// Botón “Siguiente”
+// Botó “Seguent”
 document.getElementById("next-btn").onclick = () => {
     // Ocultar la noticia actual
     newsList[currentIndex].style.display = "none";
 
-    // Pasar a la siguiente, vuelve al inicio si es la última
-    currentIndex = (currentIndex + 1) % newsList.length;
+    currentIndex = (currentIndex + 1) % newsList.length; // Torna a començar
 
-    // Mostrar la siguiente noticia
     newsList[currentIndex].style.display = "block";
-
-    // Actualizar indicador si lo tienes
-    const indicator = document.getElementById("news-indicator");
-    if (indicator) {
-        indicator.innerText = `Notícia ${currentIndex + 1} de ${newsList.length}`;
-    }
 };
