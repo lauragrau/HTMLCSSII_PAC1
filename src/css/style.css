@@ -580,11 +580,7 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
 
 
 @media (max-width: 768px) {
-    section {
-        min-height: auto;
-        height: auto;
-    }
-    
+
     .header-container {
         flex-direction: column; 
         text-align: center;
@@ -602,6 +598,37 @@ figcaption a:hover, .monthly_topic a:hover, label a:hover{
     footer .right{
         order:0;
     }
+
+    .blackboard {
+        height: auto;
+        min-height: 50vh;
+    }
+    
+    main, section {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    
+    .news-list ol, .post-list ol {
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+    
+    .form {
+        display: block;
+    }
+    
+    .card {
+        flex-grow: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .news-list li .button {
+        margin-bottom: 1rem;
+    }
+
+    
 }
 
 @media screen and (min-width: 992px){
